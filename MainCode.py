@@ -38,7 +38,7 @@ while JSONKey != ("None"):
 
             StoredIDs.write(ConvertedName+" : "+ConvertedID+"\n")
 
-        RequestURL = "https://catalog.roblox.com/v1/search/items/details?Category=3&CreatorTargetId=2897916&CreatorType=2&Limit=30&Cursor=" + JSONKey
+        RequestURL = "https://catalog.roblox.com/v1/search/items/details?Category=3&CreatorTargetId={}&CreatorType=2&Limit=30&Cursor=".format(GroupID) + JSONKey
         print("New Key:", JSONKey)
         time.sleep(1)
 
